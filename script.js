@@ -71,3 +71,4 @@ document.addEventListener('DOMContentLoaded', function () {
     fieldFilter.options[0].textContent = currentLanguage === 'en' ? 'All Fields' : 'كل التخصصات';
   }
 });
+
