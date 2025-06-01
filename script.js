@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('search');
   const sortBtn = document.getElementById('sort-deadline');
   const fieldFilter = document.getElementById('field-filter');
+  const darkToggle = document.getElementById('toggle-dark'); // ✅ STEP 1
    // 🌐 Language Toggle
    const toggleBtn = document.getElementById('toggle-language');
    let isArabic = false;
@@ -45,7 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
       displayTable(allData);
     }
   });
-
+   darkToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
   // Populate dropdown with unique fields
   function populateFieldFilter(data) {
     const fields = [...new Set(data.map(row => row.Field))].sort();
