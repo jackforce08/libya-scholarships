@@ -43,13 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
       const row = document.createElement('tr');
 
       row.innerHTML = `
-        <td>${currentLanguage === 'en' ? s.Name : s.Name_AR || s.Name}</td>
-        <td>${currentLanguage === 'en' ? s.Country : s.Country_AR || s.Country}</td>
-        <td>${s.Deadline || 'N/A'}</td>
-        <td>${currentLanguage === 'en' ? s.Field : s.Field_AR || s.Field}</td>
-        <td><a href="${s.Link}" target="_blank">🔗</a></td>
-      `;
-
+  <td data-label="Name">${currentLanguage === 'en' ? s.Name : s.Name_AR || s.Name}</td>
+  <td data-label="Country">${currentLanguage === 'en' ? s.Country : s.Country_AR || s.Country}</td>
+  <td data-label="Deadline">${s.Deadline || 'N/A'}</td>
+  <td data-label="Field">${currentLanguage === 'en' ? s.Field : s.Field_AR || s.Field}</td>
+  <td data-label="Link"><a href="${s.Link}" target="_blank">🔗</a></td>
+  `;
       tableBody.appendChild(row);
     });
   }
