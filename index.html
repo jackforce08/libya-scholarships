@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Libya Scholarships Finder</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Libya Scholarship Finder</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-  <script src="script.js"></script>
 </head>
 <body>
-  <h1>Libya Scholarships Finder</h1>
-  <div id="controls">
-    <button id="toggle-language">🌐 العربية</button>
-    <button id="toggle-dark">🌙 Dark Mode</button>
-    <input type="text" id="search" placeholder="Search scholarships...">
-    <button id="sort-deadline">Sort by Deadline ↑</button>
-    <label for="field-filter">Filter by Field:</label>
-    <select id="field-filter">
-      <option value="">All Fields</option>
-    </select>
-  </div>
-<table id="scholarship-table">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Country</th>
-      <th>Deadline</th>
-      <th>Field</th>
-      <th>Link</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-  <tbody></tbody>
-</table>
-  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <header>
+    <h1>Libya Scholarship Finder</h1>
+    <div style="margin-bottom: 1em;">
+      <button id="toggle-lang">🇺🇸 عربي</button>
+      <button id="toggle-dark">🌙 Dark Mode</button>
+      <select id="field-filter">
+        <option value="All">All Fields</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <table id="scholarship-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Country</th>
+          <th>Deadline</th>
+          <th>Field</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
