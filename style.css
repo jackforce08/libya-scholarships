@@ -42,6 +42,30 @@ a {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode table {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode td, body.dark-mode th {
+  border-color: #333;
+}
+
+body.dark-mode a {
+  color: #90caf9;
+}
+
+body.dark-mode button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+}
+
 @media screen and (max-width: 768px) {
   body {
     padding: 10px;
