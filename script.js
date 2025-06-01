@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       row.innerHTML = `
   <td data-label="Name">${currentLanguage === 'en' ? s.Name : s.Name_AR || s.Name}</td>
-  <td data-label="Destination">${currentLanguage === 'en' ? s.Destination : s.Country_AR || s.Destination}</td>
+  <td data-label="Destination">${currentLanguage === 'en' ? s.Destination : s.Destination_AR || s.Destination}</td>
   <td data-label="Deadline">${s.Deadline || 'N/A'}</td>
   <td data-label="Field">${currentLanguage === 'en' ? s.Field : s.Field_AR || s.Field}</td>
   <td data-label="Link"><a href="${s.Link}" target="_blank">🔗</a></td>
