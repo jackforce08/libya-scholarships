@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Libya Scholarships Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Libya Scholarships Finder</h1>
+  <div id="controls">
+    <button id="toggle-language">🌐 العربية</button>
+    <input type="text" id="search" placeholder="Search scholarships...">
+    <button id="sort-deadline">Sort by Deadline ↑</button>
+    <label for="field-filter">Filter by Field:</label>
+    <select id="field-filter">
+      <option value="">All Fields</option>
+    </select>
+  </div>
+<table id="scholarship-table">
+  <thead>
+    <tr>
+      <th id="header-name">Name</th>
+      <th id="header-destination">Destination</th>
+      <th id="header-deadline">Deadline</th>
+      <th id="header-field">Field</th>
+      <th id="header-link">Link</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+  <tbody></tbody>
+</table>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
