@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
    // 🌐 Language Toggle
    const toggleBtn = document.getElementById('toggle-language');
    let isArabic = false;
- 
+   document.getElementById('toggle-dark').addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
    toggleBtn.addEventListener('click', () => {
      isArabic = !isArabic;
  
