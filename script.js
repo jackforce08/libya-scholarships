@@ -2,9 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const tableBody = document.querySelector('#scholarship-table tbody');
   const searchInput = document.getElementById('search');
 
-  Papa.parse('data/scholarships.csv', {
-    download: true,
-    header: true,
+ Papa.parse('data/scholarships.csv', {
+  download: true,
+  header: true,
+  ...
+});
+
     complete: function(results) {
       const data = results.data;
       displayTable(data);
