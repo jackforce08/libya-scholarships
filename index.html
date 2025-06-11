@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libya Scholarships Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-graduation-cap"></i> Libya Scholarships Finder</h1>
+    <div id="controls">
+      <button id="toggle-language" class="language-btn">
+        <i class="fas fa-globe"></i> العربية
+      </button>
+      <div class="search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="search" placeholder="Search scholarships...">
+      </div>
+      <button id="sort-deadline">
+        <i class="fas fa-sort"></i> Sort by Deadline ↑
+      </button>
+      <div class="filter-container">
+        <label for="field-filter">Filter by Field:</label>
+        <select id="field-filter">
+          <option value="">All Fields</option>
+        </select>
+      </div>
+    </div>
+    <table id="scholarship-table">
+      <thead>
+        <tr>
+          <th id="header-name">Name</th>
+          <th id="header-destination">Destination</th>
+          <th id="header-deadline">Deadline</th>
+          <th id="header-field">Field</th>
+          <th id="header-link">Link</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
