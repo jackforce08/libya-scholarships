@@ -110,3 +110,48 @@ a:hover {
     color: var(--primary-color);
   }
 }
+
+/* Footer Styles */
+.site-footer {
+  background-color: white;
+  padding: 40px 20px;
+  margin-top: 50px;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bio-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+}
+
+.bio-section h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.bio-text {
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* RTL support for footer */
+[dir="rtl"] .bio-section h3,
+[dir="rtl"] .bio-text {
+  text-align: right;
+}

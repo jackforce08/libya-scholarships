@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSortOrder = 'asc';
   let allData = [];
 
-  Papa.parse('data/scholarships.csv', {
+  Papa.parse('https://docs.google.com/spreadsheets/d/1KQA6aS0__43iwuRIruqH2GA_pToSagLzDgwPLTdodmI/edit?usp=sharing', {
     download: true,
     header: true,
     skipEmptyLines: true,
