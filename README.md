@@ -1,5 +1,5 @@
 # Libya Scholarship Finder 🎓🇱🇾
-
+DISCLAIMER THIS IS STILL JUST TESTING AND STILL HAVENT ADDED THE FULL SCHOLARSHIPS OR DEVELOPED A FULLY WORKING SITE 
 A web app designed to help Libyan students find scholarships based on field of study, destination country, and application deadline. Built to simplify the journey of students seeking educational opportunities abroad.
 
 ## 🌍 Why I Built This
