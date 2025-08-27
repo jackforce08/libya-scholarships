@@ -31,12 +31,6 @@ As a Libyan student who struggled to find scholarships, I realized there was no 
 - Save favorites (using local storage)
 - Admin panel to add new scholarships easily
 
-## 📂 Project Status
-
-✅ Planning & Research  
-🔲 Building UI  
-🔲 Connecting data  
-🔲 Deploying on GitHub Pages
 
 ## 📸 Screenshots (Coming Soon)
 
